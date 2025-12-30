@@ -5,40 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Confession</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { text-align: center; color: #d9534f; }
-        .confession { margin: 20px 0; padding: 15px; background: #f9f9f9; border-left: 5px solid #d9534f; }
-        form { margin-top: 20px; }
-        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
-        button { background: #d9534f; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background: #c9302c; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5; /* Light purple background */
+            color: #333;
+            text-align: center;
+            padding: 70px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #9c27b0; /* Purple accent */
+        }
+        img {
+            max-width: 200%;
+            height: auto;
+            border-radius: 50px;
+        }
+        a {
+            color: #9c27b0; /* Purple accent */
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>My Confession</h1>
-        <div class="confession">
-            <p>[Replace this with your actual confession text. For example: "I confess that I once ate the last cookie without telling anyone."]</p>
-        </div>
-        
-        <!-- Optional: Anonymous submission form (submissions just alert for demo; add backend for real storage) -->
-        <h2>Share Your Own Confession</h2>
-        <form id="confessionForm">
-            <input type="text" placeholder="Your name (optional)" id="name">
-            <textarea placeholder="Your confession..." id="message" required></textarea>
-            <button type="submit">Submit Anonymously</button>
-        </form>
+        <h1>Hi Kirsten, happy new year :)</h1>
+        <p>I've been wanting to say this for a while </p>
+        <p>Here's a song that reminds me of you: <a href="https://open.spotify.com/track/2Q3Yvc2Tw3VqGIBjuCIzvW?si=cdba2e86c8534cde" target="_blank">Listen Here</a></p>
+        <p>I hope our closeness stays the same :)</p>
     </div>
-
-    <script>
-        document.getElementById('confessionForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value || 'Anonymous';
-            const message = document.getElementById('message').value;
-            alert(`Confession submitted by ${name}: ${message}`);
-            // In a real site, send this to a server (e.g., via fetch to an API).
-        });
-    </script>
 </body>
 </html>
